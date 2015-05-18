@@ -1,0 +1,12 @@
+<h1>Editing capture</h1>
+
+<% form_for(@capture) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @capture %> |
+<%= link_to 'Back', captures_path %>

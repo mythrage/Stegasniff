@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Stegasniff - Steganography Sniffer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+</head>
+
+<body id="altbody">
+
+<div id="wrapper-header">
+	<div id="header">
+		<h1>Steganography Sniffer</h1>
+	</div>
+</div>
+
+<div id="wrapper-menu">
+	<div id="menu">
+		<ul>
+			<li><a title="Captures" href="/">Captures</a></li>
+                        <li><a title="Histories" href="/">Histories</a></li>
+		</ul>
+	</div>
+</div>
+<div id="content">
+<p>
+<h2>Please Login</h2>
+  <%= form_tag :action => 'process_login'%>
+	<table>
+	<tr>
+   <td>Username:</td><td><%= text_field "user", "username" %></td>
+	 </tr>
+	 <tr>
+	 <td>Password:</td><td><%= password_field "user", "password" %></td><td><%= submit_tag value="Login"%></td>
+	 </tr>
+	 </table>
+  <%= form_tag %> 
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div id="footer">
+	Developed by <a title="mythrage" href="http://stegasniff.blogspot.com">mythrage</a>
+</div>
+
+</body>
+
+</html>

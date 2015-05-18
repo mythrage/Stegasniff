@@ -1,0 +1,30 @@
+<h1>Listing captures</h1>
+
+<table border="1">
+<tr>
+<th>Source IP</th>
+<th>Server IP</th>
+<th>Sender Mail</th>
+<th>Receipient Mail</th>
+<th>Time</th>
+<th>Date Captured</th>
+<th>Picture Name</th>
+<th>Detection</th>
+</tr>
+
+<% for capture in @captures %>
+  <tr>
+    <td><%= capture.source %></td>
+    <td><%= capture.dest %></td>
+    <td><%= capture.smail %></td>
+    <td><%= capture.dmail %></td>
+    <td><%= capture.time %></td>
+    <td><%= capture.date %></td>
+    <td><%= capture.picture %></td>
+    <td><%= capture.stego %></td>
+    <td><%= link_to 'Show', capture %></td>
+    <td><%= link_to 'Destroy', capture, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+

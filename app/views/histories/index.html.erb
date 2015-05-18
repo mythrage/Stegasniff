@@ -1,0 +1,17 @@
+<h1>Listing histories</h1>
+
+<table border="1">
+  <tr>
+	<th>Event</th>
+	<th>Time</th>
+	<th>Date</th>
+  </tr>
+
+<% for history in @histories %>
+  <tr>
+		<td><%= history.event %></td>
+		<td><%= history.time %></td>
+		<td><%= history.date %></td>
+  </tr>
+<% end %>
+</table>
